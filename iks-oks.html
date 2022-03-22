@@ -1,1 +1,50 @@
-<h1>Е па не можеш!Мрзело ме да испрограмира икс-окс. Иди учи!(Да Петре, мислим на тебе)</h1>
+<h1>Е па не можеш!Мрзело ме да испрограмира икс-окс. Уживај у мом савршеном Пајтон коду, са хиљаду if-oва, јер зашто једноставно, кад може компликовано!</h1>
+<p1>#Korisnik unosi tri cela broja i trebamo naći najveći
+a = int(input("Unesite prvi broj: "))
+b = int(input("Unesite drugi broj: "))
+c = int(input("Unesite treći broj: "))
+A = a > b
+if A:
+    cmax = a
+    najveci = cmax
+    B = a > c
+    if B:
+        cmax = a
+        najveci = cmax
+        srednji = c
+        najmanji = b
+        print("Od unetih brojeva, najmanji je", najmanji, "srednji je", srednji, "a najveći je", najveci)
+    else:
+        cmax = c
+        najveci = cmax
+        srednji = a
+        najmanji = b
+        print("Od unetih brojeva, najmanji je", najmanji, "srednji je", srednji, "a najveći je", najveci)
+elif A == False: 
+    cmax = b
+    C = b > c
+    if C:
+        cmax = b
+        najveci = cmax
+        srednji = c
+        najmanji = a
+        print("Od unetih brojeva, najmanji je", najmanji, "srednji je", srednji, "a najveći je", najveci)
+    else:
+        cmax = c
+        najveci = cmax
+        srednji = b
+        najmanji = a
+        print("Od unetih brojeva, najmanji je", najmanji, "srednji je", srednji, "a najveći je", najveci)
+else: 
+    D = c > b
+    if D:
+        cmax = c
+        najveci = c
+        srednji = b
+        najmanji = a
+        print("Od unetih brojeva, najmanji je", najmanji, "srednji je", srednji, "a najveći je", najveci)
+    else:
+        najveci = b
+        srednji = c
+        najmanji = a
+        print("Od unetih brojeva, najmanji je", najmanji, "srednji je", srednji, "a najveći je", najveci)</p1>
